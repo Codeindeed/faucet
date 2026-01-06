@@ -93,3 +93,43 @@ test('it fails with invalid treasury PDA', async (t) => {
     { name: 'InvalidTreasuryPda' }
   );
 });
+
+test.serial('it prevents double-claiming the same challenge', async (t) => {
+  const umi = await createUmi();
+  umi.use(mplCore());
+
+  // Fund the treasury with enough for 2 claims (but we should only get 1)
+  await fundTreasury(umi, sol(2).basisPoints);
+
+  // Create and burn first asset - should succeed
+  const asset1 = generateSigner(umi);
+  await createV1(umi, {
+    asset: asset1,
+    name: 'Test Asset 1',
+    uri: 'https://example.com/asset1.json',
+  }).sendAndConfirm(umi);
+
+  await challenge0(umi, {
+    asset: asset1.publicKey,
+    owner: umi.identity,
+  }).sendAndConfirm(umi);
+
+  // Create second asset
+  const asset2 = generateSigner(umi);
+  await createV1(umi, {
+    asset: asset2,
+    name: 'Test Asset 2',
+    uri: 'https://example.com/asset2.json',
+  }).sendAndConfirm(umi);
+
+  // Attempt to claim again with the same identity - should fail
+  // because the proof PDA already exists
+  await t.throwsAsync(
+    challenge0(umi, {
+      asset: asset2.publicKey,
+      owner: umi.identity,
+    }).sendAndConfirm(umi),
+    { message: /already in use/ },
+    'Double-claim should fail because proof account already exists'
+  );
+});
