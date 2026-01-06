@@ -1,0 +1,556 @@
+{
+  "version": "0.1.0",
+  "name": "mpl_faucet_program",
+  "instructions": [
+    {
+      "name": "Challenge0",
+      "accounts": [
+        {
+          "name": "asset",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The Core asset to burn"
+          ]
+        },
+        {
+          "name": "collection",
+          "isMut": true,
+          "isSigner": false,
+          "isOptional": true,
+          "docs": [
+            "The collection the asset belongs to (if any)"
+          ]
+        },
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true,
+          "docs": [
+            "The owner of the asset (receives SOL reward)"
+          ]
+        },
+        {
+          "name": "proof",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The proof of challenge 0 completion"
+          ]
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The treasury PDA that holds SOL rewards"
+          ]
+        },
+        {
+          "name": "mplCoreProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The MPL Core program"
+          ]
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The system program"
+          ]
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 0
+      }
+    },
+    {
+      "name": "Challenge1",
+      "accounts": [
+        {
+          "name": "asset",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The Core asset to burn"
+          ]
+        },
+        {
+          "name": "collection",
+          "isMut": true,
+          "isSigner": false,
+          "isOptional": true,
+          "docs": [
+            "The collection the asset belongs to (if any)"
+          ]
+        },
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true,
+          "docs": [
+            "The owner of the asset (receives SOL reward)"
+          ]
+        },
+        {
+          "name": "proof",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The proof of challenge 0 completion"
+          ]
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The treasury PDA that holds SOL rewards"
+          ]
+        },
+        {
+          "name": "mplCoreProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The MPL Core program"
+          ]
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The system program"
+          ]
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 1
+      }
+    },
+    {
+      "name": "Challenge2",
+      "accounts": [
+        {
+          "name": "asset",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The Core asset to burn"
+          ]
+        },
+        {
+          "name": "collection",
+          "isMut": true,
+          "isSigner": false,
+          "isOptional": true,
+          "docs": [
+            "The collection the asset belongs to (if any)"
+          ]
+        },
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true,
+          "docs": [
+            "The owner of the asset (receives SOL reward)"
+          ]
+        },
+        {
+          "name": "proof",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The proof of challenge 0 completion"
+          ]
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The treasury PDA that holds SOL rewards"
+          ]
+        },
+        {
+          "name": "mplCoreProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The MPL Core program"
+          ]
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The system program"
+          ]
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 2
+      }
+    },
+    {
+      "name": "Challenge3",
+      "accounts": [
+        {
+          "name": "asset",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The Core asset to burn"
+          ]
+        },
+        {
+          "name": "collection",
+          "isMut": true,
+          "isSigner": false,
+          "isOptional": true,
+          "docs": [
+            "The collection the asset belongs to (if any)"
+          ]
+        },
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true,
+          "docs": [
+            "The owner of the asset (receives SOL reward)"
+          ]
+        },
+        {
+          "name": "proof",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The proof of challenge 0 completion"
+          ]
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The treasury PDA that holds SOL rewards"
+          ]
+        },
+        {
+          "name": "mplCoreProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The MPL Core program"
+          ]
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The system program"
+          ]
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 3
+      }
+    },
+    {
+      "name": "Challenge4",
+      "accounts": [
+        {
+          "name": "asset",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The Core asset to burn"
+          ]
+        },
+        {
+          "name": "collection",
+          "isMut": true,
+          "isSigner": false,
+          "isOptional": true,
+          "docs": [
+            "The collection the asset belongs to (if any)"
+          ]
+        },
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true,
+          "docs": [
+            "The owner of the asset (receives SOL reward)"
+          ]
+        },
+        {
+          "name": "proof",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The proof of challenge 0 completion"
+          ]
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The treasury PDA that holds SOL rewards"
+          ]
+        },
+        {
+          "name": "mplCoreProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The MPL Core program"
+          ]
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The system program"
+          ]
+        }
+      ],
+      "args": [],
+      "discriminant": {
+        "type": "u8",
+        "value": 4
+      }
+    },
+    {
+      "name": "BurnBubblegumV2Asset",
+      "accounts": [
+        {
+          "name": "treeConfig",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The tree configuration account"
+          ]
+        },
+        {
+          "name": "merkleTree",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The merkle tree account"
+          ]
+        },
+        {
+          "name": "leafOwner",
+          "isMut": true,
+          "isSigner": true,
+          "docs": [
+            "The owner of the cNFT (receives SOL reward)"
+          ]
+        },
+        {
+          "name": "leafDelegate",
+          "isMut": false,
+          "isSigner": false,
+          "isOptional": true,
+          "docs": [
+            "The delegate of the cNFT (defaults to leaf_owner)"
+          ]
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "The treasury PDA that holds SOL rewards"
+          ]
+        },
+        {
+          "name": "collection",
+          "isMut": true,
+          "isSigner": false,
+          "isOptional": true,
+          "docs": [
+            "The Core collection (if cNFT is part of one)"
+          ]
+        },
+        {
+          "name": "bubblegumProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The Bubblegum V2 program"
+          ]
+        },
+        {
+          "name": "compressionProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The SPL Account Compression program"
+          ]
+        },
+        {
+          "name": "mplCoreProgram",
+          "isMut": false,
+          "isSigner": false,
+          "isOptional": true,
+          "docs": [
+            "The MPL Core program (for collection operations)"
+          ]
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The system program"
+          ]
+        },
+        {
+          "name": "logWrapper",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "The SPL Noop program"
+          ]
+        }
+      ],
+      "args": [
+        {
+          "name": "burnBubblegumV2AssetArgs",
+          "type": {
+            "defined": "BurnBubblegumV2AssetArgs"
+          }
+        }
+      ],
+      "discriminant": {
+        "type": "u8",
+        "value": 5
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Proof",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "isSolved",
+            "type": "bool"
+          }
+        ]
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "BurnBubblegumV2AssetArgs",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "root",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "dataHash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "creatorHash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "nonce",
+            "type": "u64"
+          },
+          {
+            "name": "index",
+            "type": "u32"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "code": 0,
+      "name": "InvalidSystemProgram",
+      "msg": "Invalid System Program"
+    },
+    {
+      "code": 1,
+      "name": "DeserializationError",
+      "msg": "Error deserializing account"
+    },
+    {
+      "code": 2,
+      "name": "SerializationError",
+      "msg": "Error serializing account"
+    },
+    {
+      "code": 3,
+      "name": "InsufficientTreasuryBalance",
+      "msg": "Insufficient treasury balance"
+    },
+    {
+      "code": 4,
+      "name": "InvalidTreasuryPda",
+      "msg": "Invalid treasury PDA"
+    },
+    {
+      "code": 5,
+      "name": "InvalidMplCoreProgram",
+      "msg": "Invalid MPL Core program"
+    },
+    {
+      "code": 6,
+      "name": "InvalidBubblegumProgram",
+      "msg": "Invalid Bubblegum program"
+    },
+    {
+      "code": 7,
+      "name": "InvalidProofDerivation",
+      "msg": "Invalid proof derivation"
+    }
+  ],
+  "metadata": {
+    "origin": "shank",
+    "address": "FAUCp7gqwz4tv1XpxqBQ3J9p8kVATc2m1bvMvHvhg9A3",
+    "binaryVersion": "0.4.5",
+    "libVersion": "0.4.5"
+  }
+}

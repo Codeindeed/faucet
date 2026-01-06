@@ -1,6 +1,6 @@
-# Contributing to Mpl Project Name
+# Contributing to Mpl Faucet
 
-This is a quick guide to help you contribute to Mpl Project Name.
+This is a quick guide to help you contribute to Mpl Faucet.
 
 ## Getting started
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-EXTERNAL_ID=("metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s" "noopb9bkMVfRPU8AsbpTUg8AQkHtKwMYZiFUjNRtMmV")
-EXTERNAL_SO=("mpl_token_metadata.so" "spl_noop.so")
+EXTERNAL_ID=("metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s" "cmtDvXumGCrqC1Age74AVPhSRVXJMd8PJS91L8KbNCK" "noopb9bkMVfRPU8AsbpTUg8AQkHtKwMYZiFUjNRtMmV" "CoREENxT6tW1HoK8ypY1SxRMZTcVPm7R94rH4PZNhX7d" "mcmt6YrQEMKw8Mw43FmpRLmf7BqRnFMKmAcbxE3xkAW" "mnoopTCrg4p8ry25e4bcWA9XZjbNjMTfgYVGGEdRsf3" "BGUMAp9Gq7iTEuizy4pqaxsTyUCBK68MDfK752saRPUY")
+EXTERNAL_SO=("mpl_token_metadata.so" "spl_account_compression.so" "spl_noop.so" "mpl_core_program.so" "mpl_account_compression.so" "mpl_noop.so" "bubblegum.so")
 
 # output colours
 RED() { echo $'\e[1;31m'$1$'\e[0m'; }

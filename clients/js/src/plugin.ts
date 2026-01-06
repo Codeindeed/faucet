@@ -1,8 +1,8 @@
 import { UmiPlugin } from '@metaplex-foundation/umi';
-import { createMplProjectNameProgram } from './generated';
+import { createMplFaucetProgram } from './generated';
 
-export const mplProjectName = (): UmiPlugin => ({
+export const mplFaucet = (): UmiPlugin => ({
   install(umi) {
-    umi.programs.add(createMplProjectNameProgram(), false);
+    umi.programs.add(createMplFaucetProgram(), false);
   },
 });

@@ -5,6 +5,16 @@
 //! [https://github.com/metaplex-foundation/kinobi]
 //!
 
-pub(crate) mod r#create;
+pub(crate) mod r#burn_bubblegum_v2_asset;
+pub(crate) mod r#challenge0;
+pub(crate) mod r#challenge1;
+pub(crate) mod r#challenge2;
+pub(crate) mod r#challenge3;
+pub(crate) mod r#challenge4;
 
-pub use self::r#create::*;
+pub use self::r#burn_bubblegum_v2_asset::*;
+pub use self::r#challenge0::*;
+pub use self::r#challenge1::*;
+pub use self::r#challenge2::*;
+pub use self::r#challenge3::*;
+pub use self::r#challenge4::*;

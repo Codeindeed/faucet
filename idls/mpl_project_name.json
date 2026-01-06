@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "mpl_project_name_program",
+  "name": "mpl_faucet_program",
   "instructions": [
     {
       "name": "Create",
@@ -166,7 +166,7 @@
   ],
   "metadata": {
     "origin": "shank",
-    "address": "MyProgram1111111111111111111111111111111111",
+    "address": "FAUCp7gqwz4tv1XpxqBQ3J9p8kVATc2m1bvMvHvhg9A3",
     "binaryVersion": "0.4.5",
     "libVersion": "0.4.5"
   }

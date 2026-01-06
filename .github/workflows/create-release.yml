@@ -6,10 +6,10 @@ on:
       program:
         description: Program
         required: true
-        default: mpl-project-name
+        default: mpl-faucet
         type: choice
         options:
-          - mpl-project-name
+          - mpl-faucet
       bump:
         description: Version bump
         required: true

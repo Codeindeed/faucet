@@ -1,0 +1,25 @@
+[package]
+name = "mpl-faucet-program"
+version = "0.1.0"
+edition = "2021"
+readme = "./README.md"
+license-file = "../../LICENSE"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+borsh = "^0.10"
+shank = "0.4.5"
+num-derive = "^0.4"
+num-traits = "^0.2"
+solana-program = "^2.3"
+thiserror = "^2.0"
+
+# Metaplex dependencies for CPI
+mpl-core = "0.11.1"
+mpl-bubblegum = "2.1.1"
+mpl-utils = "0.4.1"
+rmp-serde = "=1.2.0"
+rmp = "=0.8.13"
