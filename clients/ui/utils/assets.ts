@@ -1,5 +1,5 @@
 import { AssetV1 } from "@metaplex-foundation/mpl-core";
-import { challenge0, challenge1, challenge2, challenge3, challenge4 } from "@metaplex-foundation/mpl-faucet";
+import { challenge0, challenge1, challenge2, challenge3, challenge4 } from "@/lib/faucet";
 
 export const filterChallenge0 = (assets: AssetV1[]) => 
   assets.filter(a => {

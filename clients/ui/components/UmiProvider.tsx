@@ -3,7 +3,7 @@
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import { walletAdapterIdentity } from "@metaplex-foundation/umi-signer-wallet-adapters";
 import { mplCore } from "@metaplex-foundation/mpl-core";
-import { mplFaucet } from "@metaplex-foundation/mpl-faucet";
+import { mplFaucet } from "@/lib/faucet";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { Umi, createNoopSigner, signerIdentity, publicKey } from "@metaplex-foundation/umi";
 import { createContext, useContext, useEffect, useState } from "react";
